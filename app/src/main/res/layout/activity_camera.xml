@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" tools:context=".CVCameraActivity">
+    <android.view.SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/surface_view"/>
+    <ImageView
+        android:id="@+id/resultview"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+    <yanyu.com.mrcar.ViewfinderView
+        android:id="@+id/finderview"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#FF0000"
+        android:textSize="28dp"
+        android:id="@+id/rstLic"/>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:textColor="#1E90FF"
+        android:text="©烟雨科技 版权所有 2019" />
+</RelativeLayout>
